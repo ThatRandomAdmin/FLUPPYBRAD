@@ -7,4 +7,6 @@ async function createRain() {
     rainContainer.appendChild(raindrop);
 }
 
-setInterval(createRain, 100);
+function rain() {
+    setInterval(createRain, 100);
+}

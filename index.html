@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FlappyBird</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
 </head>
 
@@ -18,6 +19,7 @@
                 document.getElementById("btn").style.display = "none";
                 var audio = document.getElementById("audio");
                 audio.play();
+                rain();
             }
         </script>
         <img id="btn" src="./img/Peter_Griffin.png" onclick="play()">
@@ -32,6 +34,5 @@
         </div>
     </div>
 </body>
-<script src="app.js"></script>
 
 </html>
