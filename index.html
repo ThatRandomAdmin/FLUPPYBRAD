@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlappyBird</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="rain-container">
+        <script>
+            function play() {
+                document.getElementById("main").style.display = "flex";
+                document.getElementById("btn").style.display = "none";
+                var audio = document.getElementById("audio");
+                var video = document.getElementById("video");
+                audio.play();
+                video.play();
+            }
+        </script>
+        <img id="btn" src="./img/Peter_Griffin.png" onclick="play()">
+        <audio id="audio" src="./sfx/bridIsTheWord.mp3" controls loop style="display: none;"></audio>
+        <div id="main" style="display: none;">
+            <div id="game">
+                <canvas id="canvas" width="276" height="414"></canvas>
+                <script src="game.js"></script>
+            </div>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/DL9NZQzP-94?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
